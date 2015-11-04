@@ -1,5 +1,5 @@
 h1 {
-		padding: 3px;
+	 padding: 3px;
     text-align: center;
     font-family: 'Helvetica Neue',Arial,sans-serif;
     color: #B30000;
@@ -8,7 +8,16 @@ h1 {
 }
 
 h2 {
-		padding: 3px;
+	 padding: 3px;
+    text-align: center;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    color: #404040;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h3 {
+    padding: 3px;
     text-align: center;
     font-family: 'Helvetica Neue',Arial,sans-serif;
     color: #404040;
@@ -17,7 +26,7 @@ h2 {
 }
 
 p {
-		font-family: 'Helve	tica Neue',Arial,sans-serif;
+	 font-family: 'Helve	tica Neue',Arial,sans-serif;
     color: #404040;
     font-size: 1em;
     font-weight: 700;

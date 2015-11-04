@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quora - Sign up</title>
+	<link rel="stylesheet" type="text/css" href="css/application.css">
+</head>
+
+<body>
+	<body style="background-color:#80A2A8">
+		<h1 style= "text-align: center">Sign up below</h1>
+
+
+<% if @user && !@user.errors.empty? %>
+  <% @user.errors.full_messages.each do |e| %>
+    <p><%= e %></p>
+  <% end %>
+<% end %>
+
+
+<form action ="/users" method ="POST" style="text-align:center"> 
+	<div>
+		<label>Email:</label>
+		<input id = "email" type="email" name="user[email]" placeholder = "Email" size="50"/>
+	</div>
+	<br>
+	<br>
+	<div>
+	<label>Password: </label>
+	<input id = "password" type="password" name="user[password]" placeholder = "Enter your password" size="50" />
+	</div>
+	<br>
+	<br>
+	<div>
+	<input id = "submitbutton" type="submit" value="Signup" style="text-align:center">
+	</div>
+​</form>
+<br>
+<br>
