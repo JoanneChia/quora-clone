@@ -1,0 +1,73 @@
+h1 {
+		padding: 3px;
+    text-align: center;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    color: #B30000;
+    font-size: 7em;
+    font-weight: 200;
+}
+
+h2 {
+		padding: 3px;
+    text-align: center;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    color: #404040;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+p {
+		font-family: 'Helve	tica Neue',Arial,sans-serif;
+    color: #404040;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#fullname {
+    padding:10px;
+    border:2px
+    solid #ccc;
+    text-align: left;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    border-radius: 10px;
+}
+#email {
+		padding:10px;
+    border:2px
+    solid #ccc;
+    text-align: left;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    border-radius: 10px;
+}
+#password {
+		padding:10px;
+    border:2px
+    solid #ccc;
+    text-align: left;
+    font-family: 'Helvetica Neue',Arial, sans-serif;
+    border-radius: 10px;
+}
+
+}
+#submitbutton {
+    padding:10px;
+    background:#404040;
+    border:0 none;
+    cursor:pointer;
+    font-family: 'Helvetica Neue',Arial, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 11pt;
+    color:black;
+}
+
+#login {
+		padding:10px;
+    border:2px
+    solid #ccc;
+    text-align: left;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    border-radius: 10px;
+
+}
