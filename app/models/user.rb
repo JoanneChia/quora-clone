@@ -7,15 +7,7 @@ class User < ActiveRecord::Base
   validates :password, presence: true
 
 
-  def self.authenticate(email , password)
-    # if email and password correspond to a valid user, return that user
-    # otherwise, return nil
-    @user = User.find_by(email: email)
-    if user && user.password == password
-    	return @user.id if @user.password == password
-    	return @user
-    else
-    	return "Username is invalid"
-    end
+  def self.authenticate(user_params)
+    User.find_by(user_params) || nil
   end
 end
