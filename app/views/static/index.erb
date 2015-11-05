@@ -4,13 +4,11 @@
 	<title>Quora - The Best Answer To Any Question</title>
 	<link rel="stylesheet" type="text/css" href="css/application.css">
 </head>
-
 <body>
 	<body style="background-color:#80A2A8">
 	<h1 style="text-align: center">Quora</h1>
 	<h2 style="text-align: center">The best answer to any question</h2>
 
-​
 <form action ="/session" method ="POST" style="text-align:center" > 
 	<label>Username: </label>
 	<input id = "login" type="text" name="user[username]" placeholder="Username">
@@ -22,6 +20,10 @@
 	<br>
 	<input id = "submitbutton" type="submit" value="Login">
 ​</form>
+
+<% if flash[:error] %>
+	<h2><%= flash[:error] %></h2>
+<% end %>
 
 <br>
 

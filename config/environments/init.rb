@@ -7,7 +7,7 @@ ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
 require 'rubygems'
 require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 require 'pathname'
-
+require 'sinatra/flash'
 	# database
 require 'pg'
 require 'active_record'
@@ -24,6 +24,9 @@ require 'uri'
 	# Added byebug
 require 'byebug'
 ######################################################################
+
+#Added sinatra flash gem
+
 
 
 # System Setup

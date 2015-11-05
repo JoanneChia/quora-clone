@@ -13,6 +13,7 @@ post '/session' do
 	unless current_user.nil?
 		redirect '/users/profile'
 	else
+		flash[:error] = "Username does not exist! Please try again"
 	redirect to "/"
 end
 end 

@@ -28,6 +28,9 @@ gem 'rake'
 gem 'rspec'
 gem 'byebug'
 
+#Adding sinatra-flash
+gem 'sinatra-flash'
+
 group :development, :test do
 	# Adding shotgun for local web hosting
 	gem 'shotgun'

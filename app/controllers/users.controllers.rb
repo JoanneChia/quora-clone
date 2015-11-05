@@ -21,9 +21,10 @@ end
 #create 
 post '/users' do
 	@user = User.new(params[:user])
-	if @user.save!
-		sessions[:user_id] = @user.id
-		redirect to '/'
+	if @user.save
+	byebug
+		session[:user_id] = @user.id
+		redirect to '/users/profile'
 	else
 		@error = @user.errors.full_messages[0]
 		erb :"/users/new"

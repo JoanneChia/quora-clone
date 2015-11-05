@@ -11,4 +11,5 @@ module SessionHelper
 	def authenticate_user 
 		redirect to '/' if current_user.nil?
 	end
+
 end	
