@@ -1,9 +1,18 @@
-<h1>Welcome Temp User!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quora - Your Temp Profile Page</title>
+		<link rel="stylesheet" type="text/css" href="/css/application.css">
+</head>
 
-<h2>User</h2>
+<body>
+	<body style="background-color:#80A2A8">
+		<h3 style= "text-align: center"><h3>Welcome Temp User!</h3>
+
 <p><%= current_user.email %></p>
 <p><%= current_user.password %></p>
 
 <form action="/logout" method="post">
 	<input type="submit" value="logout">
-</form>
+</form> 
+

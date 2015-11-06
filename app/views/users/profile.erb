@@ -8,3 +8,12 @@
 <body>
 	<body style="background-color:#80A2A8">
 		<h3 style= "text-align: center"><h3>Welcome User!</h3>
+
+
+<h2>User</h2>
+<p><%= current_user.email %></p>  
+<p><%= current_user.password %></p>
+
+<form action="/logout" method="post">
+	<input type="submit" value="logout">
+</form> 

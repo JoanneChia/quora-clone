@@ -1,6 +1,3 @@
-#index
-# get '/users' do	
-# end
 helpers SessionHelper
 
 #new
@@ -22,12 +19,11 @@ end
 post '/users' do
 	@user = User.new(params[:user])
 	if @user.save
-	byebug
 		session[:user_id] = @user.id
 		redirect to '/users/profile'
 	else
 		@error = @user.errors.full_messages[0]
-		erb :"/users/new"
+		redirect to '/users/new'
 	end 
 end	
 

@@ -1,7 +1,7 @@
 helpers SessionHelper
 
-get '/session/login' do
-	erb :"sessions/profile"	
+get '/login' do
+	erb :"session/login"	
 end
 
 get '/users/dashboard' do
@@ -10,14 +10,15 @@ end
 
 post '/session' do
 	session[:user] = User.authenticate(params[:user])
+
 	unless current_user.nil?
-		redirect '/users/profile'
+		redirect to '/users/profile'
 	else
 		flash[:error] = "Username does not exist! Please try again"
-	redirect to "/"
+		redirect to '/'
 end
 end 
 
 post '/logout' do
-
+	redirect '/'
 end
